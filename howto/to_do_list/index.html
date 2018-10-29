@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <div id="myDIV" class="header">
+            <h1 style="text-align: center">Danh sach To Do List </h1>
+            <input type="text" id="myInput" placeholder="nhap tieu de" style="text-align: center">
+            <span onclick="newElement()" class="addBtn" >Add</span>
+        </div>
+        <ul id="myUL">
+            <li>tap Gym</li>
+            <li class="checked">Bida</li>
+            <li>Bong da</li>
+            <li>Cau long</li>
+            <li>Tennis</li>
+            <li>Bong chuyen</li>
+        </ul>
+
+        <script type="text/javascript">
+
+            // Tạo nút "đóng" và thêm vào mỗi mục danh sách
+            var  myNodelist=document.getElementsByTagName("LI");
+            var i;
+            for (i=0;i<myNodelist.length;i++)
+            {
+                var  span=document.createElement("SPAN");
+                var txt=document.createTextNode("\u00D7");
+                span.className="close";
+                span.appendChild(txt);
+                myNodelist[i].appendChild(span);
+            }
+            // Nhấp vào nút đóng để ẩn mục danh sách hiện tại
+            var close=document.getElementsByClassName("close");
+            var i;
+            for (i=0;i<close.length;i++)
+            {
+                close[i].onclick=function () {
+                    var
+                }
+            }
+        </script>
+</body>
+</html>
